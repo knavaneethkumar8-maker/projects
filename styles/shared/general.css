@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-weight: 350;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --sidebar-bg : rgb(253, 253, 253);
+}
+
+select {
+    appearance: none;
+}
+
+
+svg {
+    pointer-events:  none;
+}
+
+path {
+    pointer-events: none;
+}
+
+
+.no-pointer-events {
+    pointer-events: none;
+}
+
+.isOpened {
+    display: flex;
+}

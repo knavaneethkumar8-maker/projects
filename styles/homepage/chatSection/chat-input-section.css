@@ -1,0 +1,367 @@
+.new-chat-note {
+    display: none;
+}
+
+
+.input-container-box {
+    height: auto;
+    width: 90%;
+    max-width: 750px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    position: relative;
+
+    width: 100%;
+    max-width: 750px;
+    height: 56px;
+
+    background-color: rgb(255, 255, 255);
+
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 28px;
+
+    box-shadow: 0px 2px 10px rgba(205, 205, 205, 0.378);
+
+    padding: 10px 16px;
+    
+    overflow: hidden;
+
+    transition: height 0.3s;
+
+    margin-bottom: 8px;
+}
+
+
+.upload-file-button {
+    position: absolute;
+    z-index: 30;
+    left: 12px;
+    bottom: 12px;
+}
+
+.input-right-section {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    z-index: 30;
+    right: 9px;
+    bottom: 9px;
+}
+
+
+.upload-file-button ,
+.voice-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 16px;
+    cursor: pointer;
+
+    transition: backgroun-color 0.15s;
+}
+
+.upload-file-button:hover,
+.voice-button:hover {
+    background-color: rgb(246, 246, 246);
+
+}
+
+.multi-purpose-button-contianer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.voice-mode-button ,
+.send-button,
+.stop-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(16, 16, 16);
+
+    height: 38px;
+    width: 38px;
+
+    border-radius: 20px;
+    cursor: pointer;
+
+    margin-left: 4px;
+    
+    transition: backgroun-color 0.15s;
+
+}
+
+.voice-mode-button:hover,
+.send-button:hover  {
+    background-color: rgb(38, 38, 38);
+}
+
+.voice-mode-button svg ,
+.send-button svg {
+    fill: white;
+}
+
+.voice-mode-button {
+    display: none;
+}
+
+.send-button {
+    display: none;
+}
+
+.stop-button {
+    background-color: rgb(227, 227, 227);
+    display: none;
+}
+
+.stop-button:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+.showButton {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+.prompt-input {
+    flex: 1;
+    position: absolute;
+    z-index: 10;
+    left: 44px;
+    right: 95px;
+    top: 0px;
+    bottom: 0px;
+
+    background-color: rgb(255, 255, 255);
+
+    height: auto;
+    display: flex;
+    align-items: center;
+
+    padding: 16px 8px;
+
+    overflow-y: hidden;
+}
+
+
+
+.prompt-input:focus {
+    outline: none;
+}
+
+.prompt-placeholder {
+    display: inline-block;
+    height: scrollHeight;
+    width: auto;
+    max-width: 100%;
+
+    font-weight: 350;
+    line-height: 22px;
+    color: rgb(37, 37, 37);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.prompt-placeholder:focus {
+    outline: none;
+}
+
+.prompt-placeholder:empty::before {
+    content: "Ask anything";
+    color: rgb(118, 117, 117);
+    font-weight: 350;
+}
+
+.white-shadow {
+    position: absolute;
+    left: 0px;
+    right: 30px;
+    top: 0px;
+    z-index: 20;
+    background-color:rgba(255, 255, 255, 0);
+    height: 96px;
+
+    box-shadow: inset 0px 1px 5px 6px rgba(255, 255, 255, 0.9),
+                inset 0px 1px 5px 6px rgb(255, 255, 255, 0.9);
+
+    pointer-events: none;
+    display: none;
+
+}
+
+
+
+
+.multiline-input {
+    height: 150px;
+
+    .prompt-input{
+        left: 10px;
+        right: 18px;
+        top: 0px;
+
+        height: 95px;
+        padding-bottom: 2px;
+        padding-top: 8px;
+
+        display: block;
+
+        overflow-y: auto;
+    }
+
+    .prompt-input::-webkit-scrollbar {
+        background-color: transparent;
+        width: 8px;
+    }
+
+    .prompt-input::-webkit-scrollbar-thumb {
+        background: rgb(179, 179, 179);
+        border-radius: 10px;
+        
+    }
+
+    .space-element {
+        display: block;
+    }
+
+    .white-shadow {
+        display: block;
+    }
+}
+
+
+
+
+.footer-note {
+    font-size: 12px;
+    color: rgb(109, 109, 109);
+    text-align: center;
+}
+
+.cookies-link{
+    color: rgb(21, 21, 21);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+.files-research-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid rgb(209, 209, 209);
+    background-color: white;
+
+    position: absolute;
+    left : 2px ;
+    bottom: 50px;
+    z-index: 4000;
+
+    border-radius: 16px;
+    padding: 5px;
+
+    display: none;
+
+    box-shadow: 2px 2px 10px rgba(229, 228, 228, 0.5);
+
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    overflow: auto;
+}
+
+.card-content::-webkit-scrollbar-thumb {
+    background-color: rgb(231, 230, 230);
+}
+
+
+
+
+.card-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 220px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+    padding: 6px 8px;
+    cursor: pointer;
+
+    transition: background-color 0.15s;
+}
+
+.card-button:hover {
+    background-color: rgb(247, 245, 245);
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 6px;
+}
+
+
+.seperation-line {
+    border: 0.9px solid rgb(184, 184, 184);
+    width: 95%;
+    background-color: rgb(226, 85, 85);
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+
+
+.more-research-options-card {
+    left: 400px;
+    display: none;
+}
+
+.truncated-research-card {
+    top: auto;
+    display: none;
+    left : 2px ;
+    bottom: 50px;
+}
+
+.open-arrow-icon {
+    margin-left: auto;
+}

@@ -1,0 +1,27 @@
+.main {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    height: 100vh;
+}
+
+.tool-tip-container {
+    background-color: rgb(26, 26, 26);
+    position: absolute;
+    z-index: 20000;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px 9px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 8px;
+
+    color: rgb(237, 237, 237);
+
+    text-wrap: nowrap;
+    white-space: nowrap;
+}
